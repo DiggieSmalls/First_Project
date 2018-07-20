@@ -40,17 +40,18 @@
             // 
             // Speichernbutton
             // 
+            this.Speichernbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Speichernbutton.Location = new System.Drawing.Point(292, 64);
             this.Speichernbutton.Name = "Speichernbutton";
             this.Speichernbutton.Size = new System.Drawing.Size(109, 25);
             this.Speichernbutton.TabIndex = 0;
-            this.Speichernbutton.Text = "Speichern";
+            this.Speichernbutton.Text = "Safe";
             this.Speichernbutton.UseVisualStyleBackColor = true;
             this.Speichernbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 48);
+            this.textBox1.Location = new System.Drawing.Point(130, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(140, 20);
             this.textBox1.TabIndex = 1;
@@ -58,14 +59,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 75);
+            this.textBox2.Location = new System.Drawing.Point(130, 81);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
             this.textBox2.TabIndex = 2;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 102);
+            this.textBox3.Location = new System.Drawing.Point(130, 108);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '$';
             this.textBox3.Size = new System.Drawing.Size(140, 20);
@@ -74,42 +75,47 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(37, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Service";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.Size = new System.Drawing.Size(73, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Username";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(37, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
             // Zurückbutton
             // 
+            this.Zurückbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zurückbutton.Location = new System.Drawing.Point(292, 98);
             this.Zurückbutton.Name = "Zurückbutton";
             this.Zurückbutton.Size = new System.Drawing.Size(109, 23);
             this.Zurückbutton.TabIndex = 5;
-            this.Zurückbutton.Text = "Zurück";
+            this.Zurückbutton.Text = "Back";
             this.Zurückbutton.UseVisualStyleBackColor = true;
             this.Zurückbutton.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
+            this.AcceptButton = this.Speichernbutton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 166);
@@ -122,7 +128,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Speichernbutton);
             this.Name = "Form3";
-            this.Text = "Neuer Eintrag";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "New Entry";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

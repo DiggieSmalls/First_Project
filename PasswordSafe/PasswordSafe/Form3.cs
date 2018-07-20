@@ -22,7 +22,7 @@ namespace PasswordSafe
         private void button1_Click(object sender, EventArgs e)
         {
             string constring = @"Data Source=localhost;initial Catalog=Password_safe;Trusted_Connection = True";
-            string query = "insert into dbo.PasswordSafe(Service, Username, Password) values('" + textBox1.Text.ToString() + "', '" + textBox2.Text.ToString() + "', '" + textBox3.Text.ToString() + "');";
+            string query = "insert into dbo.PasswordSafe(Service, Username, Password) values('"+ textBox1.Text.ToString()+"','"+textBox2.Text.ToString()+"','"+ textBox3.Text.ToString()+"');";
 
             SqlConnection sqlConnection = new SqlConnection(constring);
             SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
@@ -45,8 +45,11 @@ namespace PasswordSafe
 
             }
 
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
 
-
+            sqlConnection.Close();
 
         }
 
